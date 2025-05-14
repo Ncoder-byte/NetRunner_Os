@@ -16,3 +16,6 @@ A basic implementation of the wait() system call.
 Insights into how process synchronization works in Linux.
 Kernel-level understanding of how system calls are managed.
 This is intended for educational purposes to deepen knowledge of Linux internals and process management.
+
+Abel Getachew ID 1601018
+Thanks your following!!!
