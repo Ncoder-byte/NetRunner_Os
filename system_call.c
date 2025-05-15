@@ -1,3 +1,4 @@
+//wait() system call
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -14,13 +15,13 @@ int main() {
     if (pid == 0) {
         // Child process
         printf("Child process is running (PID: %d)\n", getpid());
-        sleep(2);  // Simulate some work
+        sleep(3); 
         printf("Child process is done.\n");
-        exit(42);  // Child exits with status 42
+        exit(42); 
     } else {
         // Parent process
         int status;
-        pid_t waited_pid = wait(&status);  // Wait for child to finish
+        pid_t waited_pid = wait(&status);  
 
         if (waited_pid == -1) {
             perror("wait failed");
